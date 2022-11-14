@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Likes and Dislikes</title>
+    <style>
+      .liked {
+        height: 200px;
+        background-color: lightblue;
+      }
+
+      .disliked {
+        background-color: rgb(248, 223, 227);
+      }
+
+      /* These IDs have a higher specificity than the classes .liked & .disliked */
+      #likes {
+        background-color: rgb(250, 235, 215);
+      }
+
+      #dislikes {
+        background-color: rgb(224, 247, 247);
+      }
+
+      li {
+        color: red;
+      }
+
+      /* These classes have higher specificity than the element h1 but they inherit the background color of their parent element*/
+      .disliked-items,
+      .liked-items {
+        color: rgb(167, 170, 10);
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol class="liked" id="likes">
+      <li class="liked-items" id="likes1">Anime</li>
+      <li class="liked-items" id="likes2">Classical Music</li>
+      <li class="liked-items" id="likes3">Languages</li>
+      <li class="liked-items" id="likes4">Cultural Appreciation</li>
+      <li class="liked-items" id="likes5">Fantasy Genre</li>
+    </ol>
+
+    <ul class="disliked" id="dislikes">
+      <li class="disliked-items" id="dislikes1">Noodles</li>
+      <li class="disliked-items" id="dislikes2">Musicals</li>
+      <li class="disliked-items" id="dislikes3">Horror Genre</li>
+      <li class="disliked-items" id="dislikes4">Nudity</li>
+      <li class="disliked-items" id="dislikes5">Arrogance</li>
+    </ul>
+  </body>
+</html>
